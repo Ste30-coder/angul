@@ -1,0 +1,44 @@
+<p>day2 works!</p>
+
+
+<h1>Interpolation</h1>
+<h1>{{msg}}</h1>
+
+<hr>
+<hr>
+
+<h3>Property Binding</h3>
+
+<input type="text" [value]="msg" />
+<br>
+<input [type]="type" value="Stefin" />
+
+<input [type]="checkboxType" value="Stefin" />
+
+<h3>Event Binding</h3>
+<input type="text" #fname>
+
+<button (click)="display(fname.value)">Click Me</button>
+
+
+
+<h2>TWO WAY DATABINDING</h2>
+<br>
+
+<h5>method 1</h5>
+
+<h2> {{ changetext }}</h2>
+
+<input type="text" [value]="changetext" (input)="changetext=$event.target.value">
+
+<br><br>
+
+<h5> method 2</h5>
+
+<br><br>
+
+<h2>{{ newtext }}</h2>
+
+<input type="text" [(ngModel)]="newtext" name="newtext">
+
+<br><br><br>

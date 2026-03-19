@@ -1,0 +1,72 @@
+<p>day4 works!</p>
+
+<h2>Switch statements</h2>
+
+@switch(day)
+{
+    @case('1'){
+        <p>Monday</p>
+    }
+    @case('2'){
+        <p>Tuesday</p>  
+    }
+    @case('3'){
+        <p>Wednesday</p>
+    }
+    @case('4'){
+        <p>Thursday</p>
+    }
+    @case('5'){
+        <p>Friday</p>
+    }
+    @case('6'){
+        <p>Saturday</p>
+    }
+    @case('7'){
+        <p>Sunday</p>
+    }
+    @default{
+        <p>Invalid day</p>
+    }
+
+}
+<br>
+<br>    
+
+
+<h2>Buildin pipelines</h2>
+<h2>Employee Details</h2>
+<p> Name: {{employee.name }}</p>
+<p> dob: {{employee.dob}}</p>
+<p>salary: {{employee.salary}}</p>
+
+<hr>
+<hr>
+
+<h4> {{employee|json}} </h4>
+<hr>
+<hr>
+
+<h4> {{employee.name|uppercase}} </h4>
+
+<hr>
+<hr>
+<h4> {{employee.name|lowercase}}</h4>
+
+<hr>
+<hr>
+<h4> {{employee.salary|currency}}</h4>
+
+<h4> {{employee.salary|currency:'INR'}}</h4>
+<h4> {{employee.salary|currency:'INR':'code'}}</h4>
+
+<hr>
+<hr>
+<h4> {{employee.dob}}</h4>
+<h4> {{employee.dob|date:'fullDate'}}</h4>
+<h4> {{employee.dob|date:'dd-MM-yyyy'}}</h4>
+
+
+<h4> {{ employee.name|samplepipe:"Rammm" }} </h4>
+
+

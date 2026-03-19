@@ -1,0 +1,16 @@
+<p>todoing works!</p>
+
+<h1>Todo table</h1>
+
+<br>
+
+<form #myform="ngForm" (ngSubmit)="create(myform.value)">
+
+<label for="">Enter Title:</label>
+<input type="text" name="title" ngModel #title="ngModel" required><br>
+
+<input type="submit" value="SUBMIT" [disabled]="myform.invalid">
+
+
+</form>
+  

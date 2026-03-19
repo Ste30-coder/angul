@@ -1,9 +1,13 @@
 import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { RouterModule, RouterOutlet } from '@angular/router';
+import { Day1 } from './day1/day1';
+import { Day2 } from './day2/day2';
+
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, RouterModule,],//day1/day2 added
+  
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

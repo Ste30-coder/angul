@@ -1,0 +1,33 @@
+<!-- <p>todo-edit works!</p>
+
+{{ mydata | json }}
+
+<h2>Todo Edit  {{mydata.title }}</h2>
+<form #todoform="ngForm">
+    <label for="title">Title:</label>
+    <input id="title" [(ngModel)]="mydata.title" name="title" required> <br>
+
+
+<label for="completed">Completed:</label>
+<input type="checkbox" id="completed" [(ngModel)]="mydata.completed" name="completed"> <br>
+
+ <button type="submit">save</button>
+
+</form> -->
+
+<p>todo-edit works!</p>
+
+
+    <pre>{{ mydata | json }}</pre>
+
+    <h2>Todo Edit {{ mydata.title }}</h2>
+
+    <form #todoform="ngForm" (ngSubmit)="saveData()">
+        <label for="title">Title:</label>
+        <input id="title" [(ngModel)]="mydata.title" name="title" required> <br>
+
+        <label for="completed">Completed:</label>
+        <input type="checkbox" id="completed" [(ngModel)]="mydata.completed" name="completed"> <br>
+
+        <button type="submit">save</button>
+    </form>

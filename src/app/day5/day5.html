@@ -1,0 +1,23 @@
+<p>day5 works!</p>
+
+<!-- #fname=ngModel -->
+<h3>TemplateDreiven Forms</h3>
+
+<h3>TemplateDreiven Forms</h3>
+
+<form #myform="ngForm" (ngSubmit)="register(myform.value)">
+
+    <label for="">Enter YR Name</label>
+    <input type="text" name="fstname" ngModel #fname="ngModel"  required
+        [class.invalid]="fname.invalid && fname.touched"> <br> <br>
+
+    <label for="">Enter YR Email</label>
+    <input type="email" name="email" ngModel #email=ngModel required> <br><br>
+
+    <label for="">Enter YR Phone</label>
+    <input type="number" name="num" ngModel #phone=ngModel required> <br><br>
+
+    <input type="submit" value="SUBMIT" [disabled]="myform.invalid"> <br>
+</form>
+
+
